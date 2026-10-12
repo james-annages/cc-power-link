@@ -1,8 +1,7 @@
 # cc-power-link
 
 A standalone ComputerCraft program pair that shows an energy storage system on a monitor: a Mekanism induction
-matrix or a Draconic Evolution energy core, over a wireless/ender modem, including across dimensions. It has its own
-installer and configuration tool and does not need any other SCADA software on the computers.
+matrix or a Draconic Evolution energy core, over a wireless/ender modem, including across dimensions.
 
 Its screen library, packet framing and message authentication come from small, unmodified parts of the MIT-licensed
 [cc-mek-scada](https://github.com/MikaylaFischler/cc-mek-scada) libraries, bundled in `third_party/` with their license.
