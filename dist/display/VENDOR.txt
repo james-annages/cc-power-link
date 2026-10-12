@@ -1,0 +1,2 @@
+cc-power-link display build
+third-party library commit: cc2eca60ac13f43a3f2af86d5f361bb15f5248f9

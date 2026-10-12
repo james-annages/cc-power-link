@@ -1,0 +1,368 @@
+{
+ "version": "0.3.0",
+ "installer": {
+  "path": "install.lua",
+  "size": 16681,
+  "sum": 1943732675
+ },
+ "roles": {
+  "sender": {
+   "files": [
+    {
+     "path": "LICENSE-cc-mek-scada",
+     "size": 1076,
+     "sum": 2275890781
+    },
+    {
+     "path": "VENDOR.txt",
+     "size": 96,
+     "sum": 2218532841
+    },
+    {
+     "path": "ccpl/clock.lua",
+     "size": 468,
+     "sum": 228303075
+    },
+    {
+     "path": "ccpl/config.lua",
+     "size": 8966,
+     "sum": 2348675250
+    },
+    {
+     "path": "ccpl/configure.lua",
+     "size": 5943,
+     "sum": 3176063652
+    },
+    {
+     "path": "ccpl/link.lua",
+     "size": 6738,
+     "sum": 2445495557
+    },
+    {
+     "path": "ccpl/protocol.lua",
+     "size": 4900,
+     "sum": 1814624470
+    },
+    {
+     "path": "ccpl/storage.lua",
+     "size": 10630,
+     "sum": 1035895706
+    },
+    {
+     "path": "configure.lua",
+     "size": 184,
+     "sum": 2231451446
+    },
+    {
+     "path": "initenv.lua",
+     "size": 248,
+     "sum": 450646436
+    },
+    {
+     "path": "lockbox/LICENSE",
+     "size": 1076,
+     "sum": 2059162900
+    },
+    {
+     "path": "lockbox/digest/md5.lua",
+     "size": 5779,
+     "sum": 370908527
+    },
+    {
+     "path": "lockbox/digest/sha1.lua",
+     "size": 4589,
+     "sum": 468092074
+    },
+    {
+     "path": "lockbox/kdf/pbkdf2.lua",
+     "size": 2327,
+     "sum": 814190111
+    },
+    {
+     "path": "lockbox/mac/hmac.lua",
+     "size": 1924,
+     "sum": 2504796257
+    },
+    {
+     "path": "lockbox/util/array.lua",
+     "size": 3474,
+     "sum": 1847782828
+    },
+    {
+     "path": "lockbox/util/bit.lua",
+     "size": 309,
+     "sum": 1073242112
+    },
+    {
+     "path": "lockbox/util/queue.lua",
+     "size": 787,
+     "sum": 2490225345
+    },
+    {
+     "path": "lockbox/util/stream.lua",
+     "size": 1693,
+     "sum": 2165369816
+    },
+    {
+     "path": "scada-common/comms.lua",
+     "size": 26574,
+     "sum": 2021918625
+    },
+    {
+     "path": "scada-common/constants.lua",
+     "size": 4439,
+     "sum": 4118494743
+    },
+    {
+     "path": "scada-common/log.lua",
+     "size": 10591,
+     "sum": 566314982
+    },
+    {
+     "path": "scada-common/network.lua",
+     "size": 11234,
+     "sum": 3612831532
+    },
+    {
+     "path": "scada-common/ppm.lua",
+     "size": 15687,
+     "sum": 798172025
+    },
+    {
+     "path": "scada-common/util.lua",
+     "size": 16953,
+     "sum": 1800624114
+    },
+    {
+     "path": "startup.lua",
+     "size": 4805,
+     "sum": 1484031767
+    }
+   ]
+  },
+  "display": {
+   "files": [
+    {
+     "path": "LICENSE-cc-mek-scada",
+     "size": 1076,
+     "sum": 2275890781
+    },
+    {
+     "path": "VENDOR.txt",
+     "size": 97,
+     "sum": 2935562334
+    },
+    {
+     "path": "ccpl/calc.lua",
+     "size": 9171,
+     "sum": 3658624041
+    },
+    {
+     "path": "ccpl/clock.lua",
+     "size": 468,
+     "sum": 228303075
+    },
+    {
+     "path": "ccpl/config.lua",
+     "size": 8966,
+     "sum": 2348675250
+    },
+    {
+     "path": "ccpl/configure.lua",
+     "size": 5943,
+     "sum": 3176063652
+    },
+    {
+     "path": "ccpl/link.lua",
+     "size": 6738,
+     "sum": 2445495557
+    },
+    {
+     "path": "ccpl/protocol.lua",
+     "size": 4900,
+     "sum": 1814624470
+    },
+    {
+     "path": "ccpl/ui/panel.lua",
+     "size": 6362,
+     "sum": 1553627915
+    },
+    {
+     "path": "ccpl/ui/style.lua",
+     "size": 2192,
+     "sum": 3698054172
+    },
+    {
+     "path": "configure.lua",
+     "size": 185,
+     "sum": 3389276075
+    },
+    {
+     "path": "graphics/core.lua",
+     "size": 10643,
+     "sum": 3390155363
+    },
+    {
+     "path": "graphics/element.lua",
+     "size": 30930,
+     "sum": 677934504
+    },
+    {
+     "path": "graphics/elements/DisplayBox.lua",
+     "size": 867,
+     "sum": 2594318260
+    },
+    {
+     "path": "graphics/elements/Div.lua",
+     "size": 872,
+     "sum": 1571235728
+    },
+    {
+     "path": "graphics/elements/Rectangle.lua",
+     "size": 8388,
+     "sum": 3104328632
+    },
+    {
+     "path": "graphics/elements/TextBox.lua",
+     "size": 3075,
+     "sum": 895731226
+    },
+    {
+     "path": "graphics/elements/indicators/DataIndicator.lua",
+     "size": 3066,
+     "sum": 582209472
+    },
+    {
+     "path": "graphics/elements/indicators/IndicatorLight.lua",
+     "size": 3059,
+     "sum": 1240713288
+    },
+    {
+     "path": "graphics/elements/indicators/PowerIndicator.lua",
+     "size": 2784,
+     "sum": 3544351055
+    },
+    {
+     "path": "graphics/elements/indicators/StateIndicator.lua",
+     "size": 2460,
+     "sum": 2729975823
+    },
+    {
+     "path": "graphics/elements/indicators/VerticalBar.lua",
+     "size": 2993,
+     "sum": 3047453657
+    },
+    {
+     "path": "graphics/events.lua",
+     "size": 8050,
+     "sum": 2131014312
+    },
+    {
+     "path": "graphics/flasher.lua",
+     "size": 2277,
+     "sum": 2167393418
+    },
+    {
+     "path": "graphics/themes.lua",
+     "size": 13604,
+     "sum": 1941468081
+    },
+    {
+     "path": "initenv.lua",
+     "size": 248,
+     "sum": 450646436
+    },
+    {
+     "path": "lockbox/LICENSE",
+     "size": 1076,
+     "sum": 2059162900
+    },
+    {
+     "path": "lockbox/digest/md5.lua",
+     "size": 5779,
+     "sum": 370908527
+    },
+    {
+     "path": "lockbox/digest/sha1.lua",
+     "size": 4589,
+     "sum": 468092074
+    },
+    {
+     "path": "lockbox/kdf/pbkdf2.lua",
+     "size": 2327,
+     "sum": 814190111
+    },
+    {
+     "path": "lockbox/mac/hmac.lua",
+     "size": 1924,
+     "sum": 2504796257
+    },
+    {
+     "path": "lockbox/util/array.lua",
+     "size": 3474,
+     "sum": 1847782828
+    },
+    {
+     "path": "lockbox/util/bit.lua",
+     "size": 309,
+     "sum": 1073242112
+    },
+    {
+     "path": "lockbox/util/queue.lua",
+     "size": 787,
+     "sum": 2490225345
+    },
+    {
+     "path": "lockbox/util/stream.lua",
+     "size": 1693,
+     "sum": 2165369816
+    },
+    {
+     "path": "scada-common/comms.lua",
+     "size": 26574,
+     "sum": 2021918625
+    },
+    {
+     "path": "scada-common/constants.lua",
+     "size": 4439,
+     "sum": 4118494743
+    },
+    {
+     "path": "scada-common/log.lua",
+     "size": 10591,
+     "sum": 566314982
+    },
+    {
+     "path": "scada-common/network.lua",
+     "size": 11234,
+     "sum": 3612831532
+    },
+    {
+     "path": "scada-common/ppm.lua",
+     "size": 15687,
+     "sum": 798172025
+    },
+    {
+     "path": "scada-common/psil.lua",
+     "size": 2701,
+     "sum": 1317492149
+    },
+    {
+     "path": "scada-common/tcd.lua",
+     "size": 2763,
+     "sum": 2123657157
+    },
+    {
+     "path": "scada-common/util.lua",
+     "size": 16953,
+     "sum": 1800624114
+    },
+    {
+     "path": "startup.lua",
+     "size": 10673,
+     "sum": 538493885
+    }
+   ]
+  }
+ }
+}
