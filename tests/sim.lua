@@ -310,7 +310,13 @@ function Machine:build_env()
         term_newline()
     end
 
-    env.keys = setmetatable({ getName = function () return "key" end }, { __index = function () return 0 end })
+    -- the key codes the graphics library looks at (ComputerCraft's numbering), anything else is 0
+    env.keys = setmetatable({
+        getName = function () return "key" end,
+        enter = 257, tab = 258, backspace = 259, right = 262, left = 263, down = 264, up = 265, delete = 261,
+        home = 268, ["end"] = 269, a = 65,
+        leftShift = 340, rightShift = 344, leftCtrl = 341, rightCtrl = 345, leftAlt = 342, rightAlt = 346
+    }, { __index = function () return 0 end })
 
     env.textutils = { serialize = serialize }
     env.term.isColor = function () return true end

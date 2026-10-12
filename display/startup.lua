@@ -22,7 +22,7 @@ local protocol   = require("ccpl.protocol")
 local panel      = require("ccpl.ui.panel")
 local style      = require("ccpl.ui.style")
 
-local DISPLAY_VERSION = "0.3.0"
+local DISPLAY_VERSION = "0.4.0"
 
 local CFG_PATH = "/ccpl_display.cfg"
 

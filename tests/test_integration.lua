@@ -34,8 +34,13 @@ H.test("first run creates config", function()
     local world = sim.new_world(PY)
     local S = world:add_machine{name="sender", id=1, dist=ROOT.."/dist/sender", sandbox_root=SANDBOX}
     sim.modem(world, S, true)
-    world.inputs = {"s"}
     S:boot()
+    -- the wizard opens by itself: Configure System, next through every page, review, save, close (accepting the defaults)
+    local function tap(x, y) S:queue("mouse_click", 1, x, y); S:queue("mouse_up", 1, x, y); world:run(300) end
+    tap(5, 6)
+    for _ = 1, 5 do tap(46, 18) end
+    tap(45, 18)
+    tap(4, 18)
     H.check(S.error == nil, "first start runs the configuration then the sender: " .. tostring(S.error))
     H.check(S:read_file("/ccpl_sender.cfg") ~= nil, "cfg created")
 end)

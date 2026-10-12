@@ -1,5 +1,5 @@
 {
- "version": "0.3.0",
+ "version": "0.4.0",
  "installer": {
   "path": "install.lua",
   "size": 16681,
@@ -30,8 +30,8 @@
     },
     {
      "path": "ccpl/configure.lua",
-     "size": 5943,
-     "sum": 3176063652
+     "size": 7077,
+     "sum": 2875151873
     },
     {
      "path": "ccpl/link.lua",
@@ -49,9 +49,79 @@
      "sum": 1035895706
     },
     {
+     "path": "ccpl/wizard.lua",
+     "size": 20300,
+     "sum": 3903907889
+    },
+    {
      "path": "configure.lua",
      "size": 184,
      "sum": 2231451446
+    },
+    {
+     "path": "graphics/core.lua",
+     "size": 10643,
+     "sum": 3390155363
+    },
+    {
+     "path": "graphics/element.lua",
+     "size": 30930,
+     "sum": 677934504
+    },
+    {
+     "path": "graphics/elements/DisplayBox.lua",
+     "size": 867,
+     "sum": 2594318260
+    },
+    {
+     "path": "graphics/elements/Div.lua",
+     "size": 872,
+     "sum": 1571235728
+    },
+    {
+     "path": "graphics/elements/MultiPane.lua",
+     "size": 1461,
+     "sum": 3450199432
+    },
+    {
+     "path": "graphics/elements/TextBox.lua",
+     "size": 3075,
+     "sum": 895731226
+    },
+    {
+     "path": "graphics/elements/controls/PushButton.lua",
+     "size": 5455,
+     "sum": 3040839557
+    },
+    {
+     "path": "graphics/elements/controls/RadioButton.lua",
+     "size": 5742,
+     "sum": 160359099
+    },
+    {
+     "path": "graphics/elements/form/NumberField.lua",
+     "size": 9474,
+     "sum": 787812687
+    },
+    {
+     "path": "graphics/elements/form/TextField.lua",
+     "size": 3507,
+     "sum": 3092074770
+    },
+    {
+     "path": "graphics/events.lua",
+     "size": 8050,
+     "sum": 2131014312
+    },
+    {
+     "path": "graphics/flasher.lua",
+     "size": 2277,
+     "sum": 2167393418
+    },
+    {
+     "path": "graphics/themes.lua",
+     "size": 13604,
+     "sum": 1941468081
     },
     {
      "path": "initenv.lua",
@@ -129,6 +199,11 @@
      "sum": 798172025
     },
     {
+     "path": "scada-common/tcd.lua",
+     "size": 2763,
+     "sum": 2123657157
+    },
+    {
      "path": "scada-common/util.lua",
      "size": 16953,
      "sum": 1800624114
@@ -136,7 +211,7 @@
     {
      "path": "startup.lua",
      "size": 4805,
-     "sum": 1484031767
+     "sum": 1766426392
     }
    ]
   },
@@ -169,8 +244,8 @@
     },
     {
      "path": "ccpl/configure.lua",
-     "size": 5943,
-     "sum": 3176063652
+     "size": 7077,
+     "sum": 2875151873
     },
     {
      "path": "ccpl/link.lua",
@@ -191,6 +266,11 @@
      "path": "ccpl/ui/style.lua",
      "size": 2192,
      "sum": 3698054172
+    },
+    {
+     "path": "ccpl/wizard.lua",
+     "size": 20300,
+     "sum": 3903907889
     },
     {
      "path": "configure.lua",
@@ -218,6 +298,11 @@
      "sum": 1571235728
     },
     {
+     "path": "graphics/elements/MultiPane.lua",
+     "size": 1461,
+     "sum": 3450199432
+    },
+    {
      "path": "graphics/elements/Rectangle.lua",
      "size": 8388,
      "sum": 3104328632
@@ -226,6 +311,26 @@
      "path": "graphics/elements/TextBox.lua",
      "size": 3075,
      "sum": 895731226
+    },
+    {
+     "path": "graphics/elements/controls/PushButton.lua",
+     "size": 5455,
+     "sum": 3040839557
+    },
+    {
+     "path": "graphics/elements/controls/RadioButton.lua",
+     "size": 5742,
+     "sum": 160359099
+    },
+    {
+     "path": "graphics/elements/form/NumberField.lua",
+     "size": 9474,
+     "sum": 787812687
+    },
+    {
+     "path": "graphics/elements/form/TextField.lua",
+     "size": 3507,
+     "sum": 3092074770
     },
     {
      "path": "graphics/elements/indicators/DataIndicator.lua",
@@ -360,7 +465,7 @@
     {
      "path": "startup.lua",
      "size": 10673,
-     "sum": 538493885
+     "sum": 1183237054
     }
    ]
   }

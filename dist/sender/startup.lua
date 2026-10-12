@@ -14,7 +14,7 @@ local link     = require("ccpl.link")
 local protocol = require("ccpl.protocol")
 local storage  = require("ccpl.storage")
 
-local SENDER_VERSION = "0.3.0"
+local SENDER_VERSION = "0.4.0"
 
 local CFG_PATH = "/ccpl_sender.cfg"
 
