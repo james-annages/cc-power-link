@@ -1,3 +1,3 @@
 Selected library files copied unmodified from https://github.com/MikaylaFischler/cc-mek-scada
 commit cc2eca60ac13f43a3f2af86d5f361bb15f5248f9
-MIT licensed, see LICENSE. Only the modules ESS Link requires are included.
+MIT licensed, see LICENSE. Only the modules cc-power-link requires are included.

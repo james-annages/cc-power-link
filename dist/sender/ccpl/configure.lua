@@ -127,18 +127,13 @@ local function edit(io, f, current)
     return v
 end
 
--- run the configuration tool for a role
+-- read the settings file of a role, with the defaults for anything missing
+---@nodiscard
 ---@param role string "sender" or "display"
----@param io? table input/output (for tests)
----@return boolean saved
-function configure.run(role, io)
-    io = io or terminal_io()
-
-    local path = config.path(role)
-    local fields = config.fields(role)
-
-    -- start from the saved file, or the defaults
+---@return table values
+local function load_values(role)
     local values = {}
+    local path = config.path(role)
 
     if fs.exists(path) then
         local fn = loadfile(path, "t", {})
@@ -148,9 +143,44 @@ function configure.run(role, io)
         if ok and type(raw) == "table" then values = raw end
     end
 
-    for _, f in ipairs(fields) do
+    for _, f in ipairs(config.fields(role)) do
         if values[f.key] == nil then values[f.key] = f.default end
     end
+
+    return values
+end
+
+-- run the configuration tool for a role<br>
+-- on an advanced computer this is the touch wizard, anywhere else (or when io is given, as the tests do) the text menu
+---@param role string "sender" or "display"
+---@param io? table input/output for the text menu (for tests)
+---@return boolean saved
+function configure.run(role, io)
+    if io == nil and term.isColor and term.isColor() then
+        local tio = terminal_io()
+
+        return require("ccpl.wizard").run(role, {
+            values = load_values(role),
+            load = function () return load_values(role) end,
+            peripherals = tio.peripherals
+        })
+    end
+
+    return configure.run_text(role, io)
+end
+
+-- the menu driven text version of the tool, for computers without a color screen
+---@param role string "sender" or "display"
+---@param io? table input/output (for tests)
+---@return boolean saved
+function configure.run_text(role, io)
+    io = io or terminal_io()
+
+    local path = config.path(role)
+    local fields = config.fields(role)
+
+    -- start from the saved file, or the defaults
+    local values = load_values(role)
 
     local message = ""
 
@@ -206,6 +236,8 @@ function configure.run(role, io)
             else
                 values[f.key] = new
             end
+        elseif text == "d" then
+            message = "type d and a number to reset one, for example: d 3"
         elseif text ~= "" then
             message = "unknown choice '" .. text .. "'"
         end

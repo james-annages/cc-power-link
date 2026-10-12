@@ -77,8 +77,13 @@ H.test("installed sender boots into the configuration tool", function()
     local w = new_world(); local m = new_machine(w)
     m:run("/install.lua", "sender", "-y")
     sim.modem(w, m, true)
-    w.inputs = {"s"} -- accept the defaults
     m:boot()
+    -- the wizard opens by itself: Configure System, next through every page, review, save, close (accepting the defaults)
+    local function tap(x, y) m:queue("mouse_click", 1, x, y); m:queue("mouse_up", 1, x, y); w:run(300) end
+    tap(5, 6)
+    for _ = 1, 5 do tap(46, 18) end
+    tap(45, 18)
+    tap(4, 18)
     H.check(exists(m, "/ccpl_sender.cfg"), "config written by the first start tool: " .. out(m) .. tostring(m.error))
     H.has(out(m), "no configuration yet", "first start notice")
 end)
@@ -117,7 +122,7 @@ H.test("update to a newer version removes old files and keeps the config", funct
 
     m.out = {}
     m:run("/install.lua", "update", "-y")
-    H.has(out(m), "0.3.0 -> 9.9.9", "versions shown: " .. out(m))
+    H.has(out(m), "0.4.0 -> 9.9.9", "versions shown: " .. out(m))
     H.has(out(m), "removed old ccpl/obsolete.lua", "old file removed")
     H.check(not exists(m, "/ccpl/obsolete.lua"), "obsolete gone")
     H.check(m:read_file("/ccpl_sender.cfg"):find("keep this key", 1, true) ~= nil, "config kept")

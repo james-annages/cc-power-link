@@ -35,11 +35,11 @@ ROLES = {
     "sender": {
         "startup": "sender/startup.lua",
         # our own library modules this role uses
-        "ccpl": ["clock.lua", "config.lua", "protocol.lua", "link.lua", "storage.lua", "configure.lua"],
+        "ccpl": ["clock.lua", "config.lua", "protocol.lua", "link.lua", "storage.lua", "configure.lua", "wizard.lua"],
     },
     "display": {
         "startup": "display/startup.lua",
-        "ccpl": ["clock.lua", "config.lua", "protocol.lua", "link.lua", "calc.lua", "ui/style.lua", "ui/panel.lua", "configure.lua"],
+        "ccpl": ["clock.lua", "config.lua", "protocol.lua", "link.lua", "calc.lua", "ui/style.lua", "ui/panel.lua", "configure.lua", "wizard.lua"],
     },
 }
 

@@ -1,8 +1,12 @@
 # Configuration
 
-Run `configure` on a computer any time. It shows every setting, lets you pick the storage or monitor from the
-peripherals it finds, hides the AuthKey while you type, checks each value, and writes `/ccpl_sender.cfg` or
-`/ccpl_display.cfg`. Reboot (ctrl+r) to apply. The file is plain Lua if you prefer to edit it by hand.
+Run `configure` on a computer any time (it also opens by itself on the first start). On an advanced computer it is a
+touch wizard in the style of the cc-mek-scada configurators: click **Configure System**, step through the pages
+(Network, Security, Storage or Monitor, Timing or Appearance, Log) with **Next**, check the summary, and click **Save**.
+You pick the storage or monitor from a list of what is attached, the auth key is hidden while you type (use **Show** to
+check it), every value is checked before you can move on, and **View Configuration** shows what is saved. The settings
+go to `/ccpl_sender.cfg` or `/ccpl_display.cfg`. Click **Reboot now** to apply them, or **Close** to carry on. Computers
+without a colour screen get a plain text menu instead. The file is plain Lua if you prefer to edit it by hand.
 
 | Field | Role | Default | Notes |
 |---|---|---|---|
