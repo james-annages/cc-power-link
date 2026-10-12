@@ -98,6 +98,10 @@ Auto-detect prefers a matrix, then an energy core, then the largest generic stor
 
 Longer guides are in the project wiki; their source is in `wiki/` in this repository and a GitHub Action (`.github/workflows/wiki.yml`) publishes it to the wiki when it changes on `main`. Create a first page in the Wiki tab once so the wiki exists.
 
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for who built this, the projects it is built on, and how to contribute.
+
 ## Licence
 
 MIT, see `LICENSE`. Bundled third-party code keeps its own MIT licences, see `THIRD_PARTY_NOTICES.md`.

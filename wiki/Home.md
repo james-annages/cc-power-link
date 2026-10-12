@@ -17,5 +17,6 @@ Two computers:
 - [Troubleshooting](Troubleshooting)
 - [Security](Security)
 - [Releasing](Releasing): publishing a new version
+- [Contributors](Contributors): who built it, what it is built on, how to contribute
 
 Source and README: <https://github.com/james-annages/cc-power-link>
